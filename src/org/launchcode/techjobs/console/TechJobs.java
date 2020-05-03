@@ -115,13 +115,13 @@ public class TechJobs {
             System.out.println("No results found.");
         } else {
             for (int i = 0; i < someJobs.size(); i++) {
-                System.out.println("*****");
+                System.out.println("\n*****");
                 HashMap<String, String> job = someJobs.get(i);
                 for (Map.Entry<String, String> field : job.entrySet()) {
                     System.out.println(field.getKey() + ": " + field.getValue());
                 }
+                System.out.println("*****");
             }
-            System.out.println("*****");
         }
     }
 }
